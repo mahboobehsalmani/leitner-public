@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="msalmani.leitner.NewCardActivity"
+    tools:showIn="@layout/activity_new_card"
+    android:background="@color/colorPrimaryLight">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058">
+
+        <EditText
+            android:id="@+id/frontTxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittextHeight"
+            android:layout_margin="@dimen/edittextMargin"
+            android:background="@drawable/outlined_edittext"
+            android:hint="@string/frontCard"
+            android:padding="@dimen/edittextMargin"
+            android:textDirection="rtl"
+            android:focusable="true"
+            android:gravity="start|center"/>
+
+        <EditText
+            android:id="@+id/backTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/edittextMargin"
+            android:background="@drawable/outlined_edittext"
+            android:hint="@string/backCard"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/edittextMargin"
+            android:textDirection="rtl"
+            android:gravity="start|top"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

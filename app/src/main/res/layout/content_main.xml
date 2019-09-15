@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="msalmani.leitner.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/bg3">
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="350dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_margin="5px">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/layoutHeight"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginEnd="@dimen/boxesFromSides"-->
+                <!--android:layout_marginStart="@dimen/boxesFromSides">-->
+                <!--<Button-->
+                    <!--android:id="@+id/box1"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:text="@string/box1"-->
+                    <!--android:layout_marginEnd="@dimen/boxesMargin"-->
+                    <!--android:layout_marginStart="@dimen/boxesMargin"-->
+                    <!--android:padding="@dimen/boxPadding"-->
+                    <!--android:background="@drawable/btnbox1"-->
+                    <!--android:drawableTop="@mipmap/ic_brain1"-->
+                    <!--android:onClick="fisrtBox"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/box2"-->
+                    <!--android:text="@string/box2"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:layout_marginEnd="@dimen/boxesMargin"-->
+                    <!--android:layout_marginStart="@dimen/boxesMargin"-->
+                    <!--android:padding="@dimen/boxPadding"-->
+                    <!--android:background="@drawable/btnbox2"-->
+                    <!--android:drawableTop="@mipmap/ic_brain2"-->
+                    <!--android:onClick="secondBox"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/layoutHeight"-->
+                <!--android:layout_marginTop="@dimen/boxesFromTop"-->
+                <!--android:layout_marginEnd="@dimen/boxesFromSides"-->
+                <!--android:layout_marginStart="@dimen/boxesFromSides"-->
+                <!--android:orientation="horizontal">-->
+                <!--<Button-->
+                    <!--android:id="@+id/box3"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_marginEnd="@dimen/boxesMargin"-->
+                    <!--android:layout_marginStart="@dimen/boxesMargin"-->
+                    <!--android:text="@string/box3"-->
+                    <!--android:padding="@dimen/boxPadding"-->
+                    <!--android:background="@drawable/btnbox3"-->
+                    <!--android:drawableTop="@mipmap/ic_brain3"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/box4"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_marginEnd="@dimen/boxesMargin"-->
+                    <!--android:layout_marginStart="@dimen/boxesMargin"-->
+                    <!--android:text="@string/box4"-->
+                    <!--android:padding="@dimen/boxPadding"-->
+                    <!--android:background="@drawable/btnbox4"-->
+                    <!--android:drawableTop="@mipmap/ic_brain4"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+
+
+            <!--<Button-->
+                <!--android:id="@+id/box5"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="@dimen/boxHeight"-->
+                <!--android:text="@string/box5"-->
+                <!--android:layout_marginTop="@dimen/boxesFromTop"-->
+                <!--android:layout_marginEnd="@dimen/boxesFromSides"-->
+                <!--android:layout_marginStart="@dimen/btnFromSides"-->
+                <!--android:padding="@dimen/boxPadding"-->
+                <!--android:background="@drawable/btnbox5"-->
+                <!--android:drawableTop="@mipmap/ic_brain5"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+
+    <!--</RelativeLayout>-->
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/box1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/largeBtnHeight"
+                android:orientation="horizontal"
+                android:background="@drawable/largebtn"
+                android:layout_marginTop="@dimen/largeBtnMargin"
+                android:layout_marginBottom="@dimen/largeBtnMargin"
+                android:layout_marginStart="@dimen/largeBtnSideMargin"
+                android:layout_marginEnd="@dimen/largeBtnSideMargin"
+                android:clickable="true"
+                android:onClick="fisrtBox"
+                android:padding="@dimen/largeBtnPadding">
+
+                <ImageView
+                    android:layout_width="@dimen/largeBtnImage"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/largeBtnPadding"                android:src="@drawable/box"/>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="box 1"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"/>
+
+                    <TextView
+                        android:id="@+id/box1Total"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="total: 0"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"/>
+
+                    <TextView
+                        android:id="@+id/box1Ready"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Ready to learn: 0"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"/>
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/largeBtnHeight"
+                android:orientation="horizontal"
+                android:background="@drawable/largebtn"
+                android:layout_marginTop="@dimen/largeBtnMargin"
+                android:layout_marginBottom="@dimen/largeBtnMargin"
+                android:layout_marginStart="@dimen/largeBtnSideMargin"
+                android:layout_marginEnd="@dimen/largeBtnSideMargin"
+                android:padding="@dimen/largeBtnPadding"
+                android:clickable="true"
+                android:onClick="secondBox">
+
+
+                <ImageView
+                    android:layout_width="@dimen/largeBtnImage"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/largeBtnPadding"
+                    android:src="@drawable/box"/>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="box 2"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"/>
+
+                    <TextView
+                        android:id="@+id/box2Total"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="total: 0"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"/>
+
+                    <TextView
+                        android:id="@+id/box2Ready"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Ready to learn: 0"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"/>
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box3Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/largeBtnHeight"
+                android:orientation="horizontal"
+                android:background="@drawable/largebtn"
+                android:layout_marginTop="@dimen/largeBtnMargin"
+                android:layout_marginBottom="@dimen/largeBtnMargin"
+                android:layout_marginStart="@dimen/largeBtnSideMargin"
+                android:layout_marginEnd="@dimen/largeBtnSideMargin"
+                android:padding="@dimen/largeBtnPadding"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/largeBtnImage"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/largeBtnPadding"                android:src="@drawable/box"/>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="box 3"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"/>
+
+                    <TextView
+                        android:id="@+id/box3Total"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="total: 0"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"/>
+
+                    <TextView
+                        android:id="@+id/box3Ready"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Ready to learn: 0"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"/>
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box4Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/largeBtnHeight"
+                android:orientation="horizontal"
+                android:background="@drawable/largebtn"
+                android:layout_marginTop="@dimen/largeBtnMargin"
+                android:layout_marginBottom="@dimen/largeBtnMargin"
+                android:layout_marginStart="@dimen/largeBtnSideMargin"
+                android:layout_marginEnd="@dimen/largeBtnSideMargin"
+                android:padding="@dimen/largeBtnPadding"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/largeBtnImage"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/largeBtnPadding"
+                    android:src="@drawable/box"/>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="box 4"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"/>
+
+                    <TextView
+                        android:id="@+id/box4Total"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="total: 0"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"/>
+
+                    <TextView
+                        android:id="@+id/box4Ready"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Ready to learn: 0"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"/>
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box5Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/largeBtnHeight"
+                android:orientation="horizontal"
+                android:background="@drawable/largebtn"
+                android:layout_marginTop="@dimen/largeBtnMargin"
+                android:layout_marginBottom="@dimen/largeBtnMargin"
+                android:layout_marginStart="@dimen/largeBtnSideMargin"
+                android:layout_marginEnd="@dimen/largeBtnSideMargin"
+                android:padding="@dimen/largeBtnPadding"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/largeBtnImage"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/largeBtnPadding"
+                    android:src="@drawable/box"/>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="box 5"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"/>
+
+                    <TextView
+                        android:id="@+id/box5Total"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="total: 0"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"/>
+
+                    <TextView
+                        android:id="@+id/box5Ready"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Ready to learn: 0"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"/>
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
