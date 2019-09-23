@@ -11,9 +11,9 @@
 
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/edittextbg" />
+            <solid android:color="@color/colorPrimaryLightPure" />
             <corners android:radius="5dp" />
-            <stroke android:color="@color/orange" android:width="2dp" />
+            <stroke android:color="@color/colorSecondaryDark" android:width="2dp" />
         </shape>
     </item>
 

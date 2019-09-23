@@ -7,12 +7,12 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="msalmani.leitner.NewCardActivity"
     tools:showIn="@layout/activity_new_card"
-    android:background="@color/colorPrimaryLight">
+    android:background="@drawable/bg1">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="500dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -39,14 +39,14 @@
         <EditText
             android:id="@+id/backTxt"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="fill_parent"
             android:layout_margin="@dimen/edittextMargin"
             android:background="@drawable/outlined_edittext"
+            android:gravity="start|top"
             android:hint="@string/backCard"
             android:inputType="textMultiLine"
             android:padding="@dimen/edittextMargin"
-            android:textDirection="rtl"
-            android:gravity="start|top"/>
+            android:textDirection="rtl" />
 
     </LinearLayout>
 

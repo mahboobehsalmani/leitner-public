@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
@@ -21,10 +23,11 @@ import classes.dbConnector;
 public class BoxActivity extends AppCompatActivity {
 
     ListView listView;
-    List<String> list;
+    ArrayList<String> list;
     ArrayAdapter<String> adapter;
     dbConnector db;
     int position;
+    RecyclerView recyclerView;
 
 
     @Override
@@ -34,13 +37,21 @@ public class BoxActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-        db = new dbConnector(this , app.main.DBNAME , null , 1 );
         list = new ArrayList<String>();
 
-        listView = (ListView)findViewById(R.id.cardsList) ;
-        adapter = new ArrayAdapter<String>(this , android.R.layout.simple_list_item_1 , list);
-        listView.setAdapter(adapter);
+        Box1Adapter adapter = new Box1Adapter(list);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView = (RecyclerView)findViewById(R.id.box1recyclerview);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(linearLayoutManager);
+//
+//        db = new dbConnector(this , app.main.DBNAME , null , 1 );
+//        list = new ArrayList<String>();
+//
+//        listView = (ListView)findViewById(R.id.cardsList) ;
+//        adapter = new ArrayAdapter<String>(this , android.R.layout.simple_list_item_1 , list);
+//        listView.setAdapter(adapter);
 
 //        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override

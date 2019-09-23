@@ -28,4 +28,10 @@
     <dimen name="largeBtnSideMargin">8dp</dimen>
     <dimen name="largeBtnImage">136dp</dimen>
     <dimen name="largeBtnPadding">5dp</dimen>
+
+
+    <!-- card -->
+    <dimen name="cardHeight">60dp</dimen>
+    <dimen name="cardPadding">16dp</dimen>
+    <dimen name="marginTopCard">8dp</dimen>
 </resources>

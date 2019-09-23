@@ -83,6 +83,7 @@
                 android:layout_weight="0"
                 android:src="@drawable/ic_arrow_back_black_24dp"
                 android:text="Button"
+                android:background="null"
                 android:onClick="backward"/>
 
             <Button
@@ -112,7 +113,8 @@
                 android:layout_weight="0"
                 android:src="@drawable/ic_arrow_forward_black_24dp"
                 android:text="Button"
-                android:onClick="forward"/>
+                android:onClick="forward"
+                android:background="null"/>
         </LinearLayout>
 
     </LinearLayout>
